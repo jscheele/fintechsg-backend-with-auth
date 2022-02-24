@@ -1,0 +1,22 @@
+{
+  "name": "nusfintech_b16_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscheele/fintechsg_b16_back.git"
+  },
+  "author": "Jon Scheele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jscheele/fintechsg_b16_back/issues"
+  },
+  "homepage": "https://github.com/jscheele/fintechsg_b16_back#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
