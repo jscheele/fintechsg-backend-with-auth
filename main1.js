@@ -1,4 +1,5 @@
 let express = require("express");
+require("dotenv").config();
 
 let app = express();
 
@@ -23,7 +24,7 @@ router.get("/sum", (request, response) => {
 
 app.use(router);
 
-app.listen(3000, (errors) => {
+app.listen(process.env.PORT || 3000, (errors) => {
   if (errors) {
     console.log(errors);
   } else {
