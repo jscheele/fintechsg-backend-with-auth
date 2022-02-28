@@ -21,6 +21,6 @@ router.get("/users/by-uid", (request, response) => {
 });
 
 // define an POST API to add a new user to database. 
-User's information is passed request's body section.
+// User's information is passed request's body section.
 
 module.exports = { router };
