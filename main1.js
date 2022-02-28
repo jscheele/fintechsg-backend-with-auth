@@ -5,6 +5,12 @@ let app = express();
 let router = express.Router();
 
 // router.get("path", callback);
+router.get("/", (request, response) => {
+  response.send("My first app deployed to Heroku");
+});
+
+
+// router.get("path", callback);
 router.get("/home", (request, response) => {
   response.send("Welcome to Dev Toolkit 2!");
 });
