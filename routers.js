@@ -8,6 +8,11 @@ const database = require("./data");
 // define a router object
 let router = express.Router();
 
+// define an API for the root path
+router.get("/", (request, response) => {
+  response.send("This is my app deployed on Heroku");
+});
+
 // define an API to return all the users
 router.get("/users/all", (request, response) => {
   let users = database.get_all_users();
