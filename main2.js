@@ -1,6 +1,9 @@
 // import the express library
 const express = require("express");
 
+// Use the port number from the .env file
+require("dotenv").config();
+
 // import router from routers.js
 const { router } = require("./routers");
 
@@ -12,10 +15,11 @@ app.use(express.json());
 app.use(router);
 
 // start the server at port 3000
-app.listen(3000, (errors) => {
+let port = process.env.PORT || 3000;
+app.listen(port, (errors) => {
   if (errors) {
     console.log(errors);
   } else {
-    console.log("Server started on port 3000");
+    console.log(`Server started on port ${port}`);
   }
 });
