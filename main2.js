@@ -16,7 +16,7 @@ app.use(router);
 
 // start the server at port 3000
 let port = process.env.PORT || 3000;
-app.listen(port, (errors) => {
+app.listen(process.env.PORT || 3000, (errors) => {
   if (errors) {
     console.log(errors);
   } else {
