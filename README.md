@@ -15,10 +15,10 @@ You will need to create these files in your Node project:
 **.gitignore**: listing your .env file, node_modules folder and any other file or path you want to keep hidden from Github  
   
 In your Heroku app, you will need to set **Config vars (in Settings)**:  
-**ISSUER_BASE_URL**: same as the value in your **.env** file  
-**CLIENT_ID**: same as the value in your **.env** file  
+**ISSUER_BASE_URL**: same as the value in your **.env** file (from your Auth0 application)  
+**CLIENT_ID**: same as the value in your **.env** file (from your Auth0 application)  
 **BASE_URL**: this needs to be the URL of your Heroku app (without port number)  
-**SECRET**: same as the value in your **.env** file  
+**SECRET**: same as the value in your **.env** file (from your Auth0 application)  
   
 In your Auth0 app, you will need to add the URL of your Heroku app:  
 **Allowed Callback URLs**: in addition to the *http://localhost:3000/callback* URL you use when running locally, you need to add the URL of your Heroku app (e.g. *https://my-app.herokuapp.com/callback*, without port number). Separate the two URLs with a comma  
